@@ -1,0 +1,12 @@
+librairy de base:
+
+#include <iostream> --> sert a utiliser cout etc
+#include <cctype> --> toupper et dautre
+#include <string> permet de declarer une string
+
+
+std::cout : affichage standard
+std::cerr : erreur (affichage direct)
+std::endl : retour a la ligne (\n)
+
+.length --> permet de connaitre la taille de la string
