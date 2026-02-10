@@ -1,4 +1,3 @@
-librairy de base:
 
 #include <iostream> --> sert a utiliser cout etc
 #include <cctype> --> toupper et dautre
@@ -10,3 +9,19 @@ std::cerr : erreur (affichage direct)
 std::endl : retour a la ligne (\n)
 
 .length --> permet de connaitre la taille de la string
+
+on declare une string avec std::string
+
+par convention en cpp n met pas void dans les parenthese comme en c
+le nommage se fais sans snake_case mais avec des maj a chaque nv mot
+
+
+struct : donnee public
+class : donnee privee
+
+dans une classe on a des donne private qui sont privee et des donnee public
+
+le const a la fin dune fonction signifie que ca lit juste les donne ca ne les modifie pas
+
+void set_darkest_secret(const std::string& value); --> ici je copie pas la chaine c juste une reference
+en cpp le & c comme des pointeur automatique 
