@@ -6,7 +6,7 @@
 /*   By: aghalmi <aghalmi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 20:41:32 by aghalmi           #+#    #+#             */
-/*   Updated: 2026/02/11 01:03:44 by aghalmi          ###   ########.fr       */
+/*   Updated: 2026/02/11 22:47:00 by aghalmi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <cstdlib>
+#include <cctype>
 #include "../include/contact.hpp"
 
 class PhoneBook
@@ -31,5 +33,7 @@ class PhoneBook
     void displayContact();
     void displayDetailContact(int index);
 };
+
+bool validStr(const std::string& str, bool alphaNum);
 
 #endif

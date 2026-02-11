@@ -6,7 +6,7 @@
 /*   By: aghalmi <aghalmi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 20:45:57 by aghalmi           #+#    #+#             */
-/*   Updated: 2026/02/11 04:01:42 by aghalmi          ###   ########.fr       */
+/*   Updated: 2026/02/11 22:35:15 by aghalmi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ std::string getInput(const std::string& text)
     std::string str;
     std::cout << text;
     std::getline(std::cin, str);
+    if (!std::cin)
+        exit (0);
     while(str.empty())
     {
         std::cout << "Input is empty, try again !" << std::endl;
