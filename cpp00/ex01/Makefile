@@ -6,7 +6,7 @@
 #    By: aghalmi <aghalmi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/09 20:40:09 by aghalmi           #+#    #+#              #
-#    Updated: 2026/02/10 01:14:56 by aghalmi          ###   ########.fr        #
+#    Updated: 2026/02/11 03:54:11 by aghalmi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,10 +32,11 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	@echo "$(GREEN)$(NAME) ready !$(RESET)"
 
 %.o: %.cpp $(INCLUDE)
 	@$(CC) $(CFLAGS) -c $< -o $@
-	@echo "$(GREEN)$(NAME) ready!$(RESET)"
+	@echo "$(GREEN)Compiling $<...$(RESET)"
 
 clean:
 	@rm -f $(OBJS)

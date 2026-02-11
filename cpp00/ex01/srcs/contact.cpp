@@ -6,13 +6,12 @@
 /*   By: aghalmi <aghalmi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 00:43:58 by aghalmi           #+#    #+#             */
-/*   Updated: 2026/02/10 01:15:47 by aghalmi          ###   ########.fr       */
+/*   Updated: 2026/02/11 04:15:00 by aghalmi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/contact.hpp"
 
-// FONCTION DE SETTER //
 void Contact::setFirstName(const std::string& value)
 {
     firstName = value;    
@@ -38,7 +37,6 @@ void Contact::setDarkestSecret(const std::string& value)
     darkestSecret = value;   
 }
 
-// FONCTION DE GETTER //
 const std::string& Contact::getFirstName() const
 {
     return (firstName);

@@ -6,7 +6,7 @@
 /*   By: aghalmi <aghalmi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 00:14:01 by aghalmi           #+#    #+#             */
-/*   Updated: 2026/02/10 01:03:17 by aghalmi          ###   ########.fr       */
+/*   Updated: 2026/02/11 04:14:26 by aghalmi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Contact
     std::string nickName;
     std::string phoneNumber;
     std::string darkestSecret;
-    
+
     public:
     void setFirstName(const std::string& value);
     void setLastName(const std::string& value); 
@@ -38,6 +38,5 @@ class Contact
     const std::string& getPhoneNumber() const;
     const std::string& getDarkestSecret() const;
 };
-
 
 #endif
